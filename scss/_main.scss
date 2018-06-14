@@ -1,0 +1,35 @@
+
+
+.body{
+	font-family: 'Dosis', 'sans-serif';
+	.cy_heading{
+		text-align: center;
+      	margin-top: 150px;
+      	font-style: bold;
+      	color: #006666;
+	}
+}
+
+h2 .cy_heading{
+	text-align:center;
+}
+.panel-subscribe{
+	@include border-radius(10px);
+    $adjust:true;
+    margin: 150px auto;
+	padding: 0 auto;
+	width: 500px;
+	margin-top: 0px;
+	.email_label{color: #006666;}
+	
+}
+.email_label{
+	font-size:20px;
+}
+.subcribe_button{
+	@include button-expand(10px);
+	color: #fff;
+}
+.button {
+	color: #fff;
+}

@@ -4,20 +4,155 @@
   <meta charset="utf-8">
   <title>Foundation Test</title>
   <link rel="stylesheet" type="text/css" href="css/app.css">
+  <style type="text/css">
+    .container{
+      margin: 0 auto;
+      width: 1000px;
+    }
+    .cy_logo{
+      height: 50px;
+      width: 100px;
+      padding-left: 30px;
+      margin-top: 0px; 
+    }
+    li{
+        list-style-type: none;
+        float: left;
+      }
+      li a{
+        text-decoration: none;
+        display: block;
+        padding: 16px;
+        text-align: center;
+        color: #fff;
+        transition: 0.9s
+      }
+      li a:hover {
+          text-decoration: none;
+          display: block;
+          padding: 16px;
+          text-align: center;
+          color: #a4d55d;
+          transition: 0.9s
+      }
+      li a:hover {
+          color: 
+      }
+      .images{
+        margin-bottom: 30px;
+      }
+  </style>
 </head>
+<!-- foundation concepts covered
+  ---tables
+  ---navigation bar
+  ---buttons
+  ----grids; box grids
+  ----thumbnails
+  -----form -->
 <body class="body">
-<h4 class="cy_heading">Cytonn Investments</h4>
-<div class="panel panel-subscribe callout radius">
-    <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <label class="email_label">Enter email for subscription:</label>
-            <input type="text" type="email" placeholder="Email" />
-          
-        </div>
-          <button class="button expand round success subcribe_button" aria-label="submit form" type="submit">SUBSCRIBE</button>
-    </form>
+<embed class="cy_logo" type="image/svg+xml" src="src/cytonn_logo.svg" /></div>
+<!-- navigartion -->
+  <nav class="top-bar" data-topbar role="navigation" style="height: 50px;margin-bottom: 30px;background-color: #006666;color: white;">
+    <div class="container" style="height: 30px;">
+      <ul class="title-area">
+        <li class="name">
+          <a class="nav_link" href="#">Home</a>
+        </li>
+        <li class="name">
+          <a class="nav_link" href="#">Food Menu</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+  <section class="container">
+    <!-- table content -->
+    <h4>Meal Timetable</h4>
+      <table>
+        <thead style="background-color: #006666;color: #fff;">
+          <tr>
+            <th colspan="3" class="text-center">Mama Milkas Hotel</th>
+          </tr>
+          <tr>
+            <th width="200">Day</th>
+            <th width="150">Time</th>
+            <th width="150">Delicacy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>Monday</td>
+              <td>Lunch</td>
+              <td>Githeri</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Lunch</td>
+              <td>Mokimo</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Lunch</td>
+              <td>Ugali, Nyama</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>Lunch</td>
+              <td>Fried Rice</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Lunch</td>
+              <td>Chapo Madondo</td>
+            </tr>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <h4>Meet Cytonn Team</h4>
+      <div class="images">
+        <ul class="small-block-grid-3">
+          <li>
+              <a class="th" role="button" aria-label="Thumbnail" href="src/img1.jpg">
+                <img class="th" src="src/img1.jpg" style="height: 250px;" aria-hidden=true alt="cytonn">
+              </a>     
+           </li>
+            <li style="margin-left: 10px;">
+              <a class="th" role="button" aria-label="Thumbnail" href="src/img2.jpg">
+                <img class="th" src="src/img2.jpg" style="height: 250px;" aria-hidden=true alt="cytonn">
+              </a>
+            </li>
+            <li>
+              <a class="th" role="button" aria-label="Thumbnail" href="src/img3.jpg">
+                <img class="th" src="src/img3.jpg" style="height: 250px;" aria-hidden=true alt="cytonn">
+              </a>     
+           </li>
+            <li style="margin-left: 10px;">
+              <a class="th" role="button" aria-label="Thumbnail" href="src/img4.jpg">
+                <img class="th" src="src/img4.jpg" style="height: 250px;" aria-hidden=true alt="cytonn">
+              </a>
+            </li>
+        </ul>
       </div>
-  </div>
+      <hr/>
+      <!-- forms -->
+      <h4 style="margin-top: 30px;">Get Weekly Emailed Cytonn Reports</h4>
+      <div class="form">
+        <form>
+          <div class="row">
+            <div class="large-2 columns">
+              <label>Enter Email here:
+                <input type="text" placeholder="example@cytonn.com" />
+              </label>
+              <a href="#" class="button expand">SUBSCRIBE</a>
+            </div>
+      </div>
+    </section>
+    <!-- bottom navbar -->
+  <nav class="navbar" style="height: 50px;margin-top: 40px;background-color:#006666;color:#fff;margin-bottom: 0px;">
+    <div class="container">
+      <p class="text-center">molukaka@cytonn.com &nbsp;&nbsp;&copy;&nbsp;2018<p>
+    </div>
+  </nav>
 </body>
 </html>
